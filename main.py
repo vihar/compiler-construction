@@ -8,18 +8,17 @@ tabs = 0
 lines = 0
 
 for i in a:
-	if(i.isalpha() == True):
-		alphabets = alphabets+1
-	elif(i.isdigit()==True):
-		digits = digits+1
-	elif(i.isspace()==True):
-		spaces = spaces+1
+    if(i.isalpha() == True):
+        alphabets = alphabets + 1
+    elif(i.isdigit() == True):
+        digits = digits + 1
+    elif(i.isspace() == True):
+        spaces = spaces + 1
 
-
-	if re.match(r'^\t+$', i):
-		tabs = tabs+1
-	elif re.match(r'^\n+$', i):
-		lines = lines+1
+    if re.match(r'^\t+$', i):
+        tabs = tabs + 1
+    elif re.match(r'^\n+$', i):
+        lines = lines + 1
 
 print("The number of Alphabets are {}".format(alphabets))
 print("The number of Numericals are {}".format(digits))
