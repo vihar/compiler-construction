@@ -1,13 +1,17 @@
 #include<stdio.h>
+
 char stk[100],stktop=-1,cnt=0;
+
 void push(char pchar)
 {
     stk[++stktop]=pchar;
 }
+
 char pop()
 {
     return stk[stktop--];
 }
+
 char checkoperation(char char1)
 {
     char oper;
@@ -23,6 +27,7 @@ char checkoperation(char char1)
         oper='N';
     return oper;
 }
+
 int checknstore(char check)
 {
     int ret;
@@ -37,6 +42,7 @@ int checknstore(char check)
         ret=0;
     return ret;
 }
+
 int main()
 {
     char msg[100],op1,op2,operation;
